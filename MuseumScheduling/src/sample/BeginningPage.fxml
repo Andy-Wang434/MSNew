@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BeginningPageController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="19.0" layoutY="20.0" prefHeight="360.0" prefWidth="563.0">
+         <left>
+            <VBox alignment="CENTER" prefHeight="360.0" prefWidth="110.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#GoToPage1" text="NewVolunteer">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#GoToPage2" text="NewTime">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#GoToPage3" text="VolunteerList">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#GoToPage4" text="TimeList">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#GoToPage5" text="Scheduling">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#GoToPage6" text="Schedule">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <Label text="Volunteer Management" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </top></BorderPane>
+   </children>
+</AnchorPane>

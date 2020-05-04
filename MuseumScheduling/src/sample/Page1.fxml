@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Page1Controller">
+   <children>
+      <TextField fx:id="UserInput" layoutX="217.0" layoutY="173.0" />
+      <Label layoutX="228.0" layoutY="80.0" text="Volunteer Name">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="384.0" layoutY="231.0" mnemonicParsing="false" onAction="#AddVolunteer" text="OK" />
+   </children>
+</AnchorPane>
