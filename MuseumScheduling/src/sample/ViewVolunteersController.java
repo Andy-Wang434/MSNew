@@ -11,12 +11,14 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Page4Controller implements Initializable {
+public class ViewVolunteersController implements Initializable {
     @FXML
-    private TableView TableTime;
+    private TableView TableName;
     @FXML
-    private TableColumn<Time, String> ColumnTime;
-    private ObservableList<Time> data;
+    private TableColumn<Volunteer, String> ColumnName;
+    @FXML
+    private TableColumn<Volunteer, Integer> ColumnId;
+    private ObservableList<Volunteer> data;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -27,10 +29,9 @@ public class Page4Controller implements Initializable {
     private void LoadData(){
         data= FXCollections.observableArrayList();
         LoadApp app=new LoadApp();
-        app.LoadTime(data);
-        ColumnTime.setCellValueFactory(new PropertyValueFactory<>("time"));
-        TableTime.setItems(null);
-        TableTime.setItems(data);
+        app.LoadName(data);
+        ColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        ColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        TableName.setItems(data);
     }
 }
-

@@ -19,44 +19,44 @@ public class BeginningPageController implements Initializable {
     }
 
     @FXML
-    private void GoToPage1(){
-        FxmlLoader object=new FxmlLoader();
-        Pane view= object.getPage("Page1");
+    private void GoToPage1() {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("AddVolunteer");
         mainPane.setCenter(view);
     }
 
     @FXML
-    private void GoToPage2(){
-        FxmlLoader object=new FxmlLoader();
-        Pane view= object.getPage("Page2");
+    private void GoToPage2() {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("AddTimeslot");
         mainPane.setCenter(view);
     }
 
     @FXML
-    private void GoToPage3(){
-        FxmlLoader object=new FxmlLoader();
-        Pane view= object.getPage("Page3");
+    private void GoToPage3() {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("ViewVolunteers");
         mainPane.setCenter(view);
     }
 
     @FXML
-    private void GoToPage4(){
-        FxmlLoader object=new FxmlLoader();
-        Pane view= object.getPage("Page4");
+    private void GoToPage4() {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("ViewTimeslots");
         mainPane.setCenter(view);
     }
 
     @FXML
-    private void GoToPage5(){
-        FxmlLoader object=new FxmlLoader();
-        Pane view= object.getPage("Page5");
+    private void GoToPage5() {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("AddSchedule");
         mainPane.setCenter(view);
     }
 
     @FXML
-    private void GoToPage6(){
-        FxmlLoader object=new FxmlLoader();
-        Pane view= object.getPage("Page6");
+    private void GoToPage6() {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("ViewSchedules");
         mainPane.setCenter(view);
     }
 }

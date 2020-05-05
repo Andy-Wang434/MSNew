@@ -8,9 +8,9 @@ import java.sql.SQLException;
 
 public class InsertApp {
 
-    private Connection connect() {
+    public Connection connect() {
         // SQLite connection string
-        String url = "jdbc:sqlite:"+System.getProperty("user.dir")+"/src/sample/Museum.db";
+        String url = "jdbc:sqlite:" + System.getProperty("user.dir") + "/src/sample/Museum.db";
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
@@ -42,12 +42,12 @@ public class InsertApp {
         }
     }
 
-    public void insertSchedule(int id, String time){
+    public void insertSchedule(int id, String time) {
         String sql = "INSERT INTO Connect(VolunteerID, VolunteerTime) VALUES(?,?)";
         try (Connection conn = this.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             pstmt.setInt(1, id);
-            pstmt.setString(2,time);
+            pstmt.setString(2, time);
             pstmt.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());

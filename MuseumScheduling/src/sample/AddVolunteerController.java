@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Page1Controller implements Initializable {
+public class AddVolunteerController implements Initializable {
 
     @FXML
     private TextField UserInput;

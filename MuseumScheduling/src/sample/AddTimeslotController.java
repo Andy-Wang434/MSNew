@@ -6,7 +6,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Page2Controller implements Initializable {
+public class AddTimeslotController implements Initializable {
 
     @FXML
     private TextField UserInput;
@@ -17,15 +17,9 @@ public class Page2Controller implements Initializable {
 
     @FXML
     private void AddTime(){
-        CheckIfExist check=new CheckIfExist();
         String timeslot=UserInput.getText();
-        if(check.CheckTime(timeslot)==false){
-            InsertApp app=new InsertApp();
-            app.insertTime(timeslot);
-            UserInput.setText("");
-        }
-        else{
-            UserInput.setText("Repeated Timeslot");
-        }
+        DuplicateHandle handler=new DuplicateHandle();
+        String result=handler.TimeSlotDuplicate(timeslot);
+        UserInput.setText(result);
     }
 }

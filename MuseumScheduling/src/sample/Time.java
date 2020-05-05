@@ -10,15 +10,15 @@ public class Time {
         this.time = new SimpleStringProperty(time);
     }
 
-    public String gettime(){
+    public String gettime() {
         return time.get();
     }
 
-    public void settime(String value){
+    public void settime(String value) {
         time.set(value);
     }
 
-    public StringProperty timeProperty(){
+    public StringProperty timeProperty() {
         return time;
     }
 

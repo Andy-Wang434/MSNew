@@ -14,27 +14,27 @@ public class Schedule {
         this.time = new SimpleStringProperty(time);
     }
 
-    public int getname(){
+    public int getname() {
         return id.get();
     }
 
-    public String gettime(){
+    public String gettime() {
         return time.get();
     }
 
-    public void setname(int value){
+    public void setname(int value) {
         id.set(value);
     }
 
-    public void settime(String value){
+    public void settime(String value) {
         time.set(value);
     }
 
-    public IntegerProperty idProperty(){
+    public IntegerProperty idProperty() {
         return id;
     }
 
-    public StringProperty timeProperty(){
+    public StringProperty timeProperty() {
         return time;
     }
 }
